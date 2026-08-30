@@ -1,19 +1,22 @@
-# FUCHSINO bilingual website
+# FUCHSINO bilingual website — browser-safe language switch
 
-German remains the default site at `/`.
-The complete English version is available under `/en/`.
-A responsive DE/EN language selector is included on the home page, all three product pages, the privacy page, and the legal notice page.
+German is the default site at `/` and English is under `/en/`.
 
-- Added bilingual standalone contact pages: `kontakt.html` (DE) and `en/contact.html` (EN), with email form linked to info@fuchsino.de.
+## Language switch fix (v3)
 
-## Language switcher browser fix
+The language control now uses normal direct HTML links instead of JavaScript/localStorage.
+This makes DE ↔ EN switching work reliably when:
+- JavaScript is disabled or blocked
+- browser storage is restricted
+- pages are opened locally after extracting the ZIP
+- the site is served normally from fuchsino.de
+- mobile/desktop layouts are used
 
-The DE/EN selector was hardened for browser navigation and mobile use:
-- synchronizes the active language with the actual page language
-- remembers an explicit DE/EN choice in localStorage
-- preserves query parameters and supported page anchors during language changes
-- handles browser Back/Forward state without leaving a stale selector UI
-- keeps direct links as a no-JavaScript fallback
-- adds keyboard navigation and Escape handling
-- prevents the mobile language menu from overflowing the viewport
-- cache-busts the language switcher CSS/JS references (`?v=2`)
+Every German page links directly to its exact English counterpart and every English page links directly back to German.
+The active language is shown in the switch itself.
+
+Validation performed:
+- 14 bilingual HTML pages checked
+- 386 local href/src/srcset references checked
+- 0 broken local references
+- no language-switcher JavaScript dependency remains
