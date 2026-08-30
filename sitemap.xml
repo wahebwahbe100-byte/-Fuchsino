@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://fuchsino.de/</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/"/></url>
-  <url><loc>https://fuchsino.de/en/</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/"/></url>
-  <url><loc>https://fuchsino.de/product-6-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-6-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-6-inch.html"/></url>
-  <url><loc>https://fuchsino.de/en/product-6-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-6-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-6-inch.html"/></url>
-  <url><loc>https://fuchsino.de/product-12-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-12-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-12-inch.html"/></url>
-  <url><loc>https://fuchsino.de/en/product-12-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-12-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-12-inch.html"/></url>
-  <url><loc>https://fuchsino.de/product-24-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-24-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-24-inch.html"/></url>
-  <url><loc>https://fuchsino.de/en/product-24-inch.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/product-24-inch.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/product-24-inch.html"/></url>
-  <url><loc>https://fuchsino.de/impressum.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/impressum.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/impressum.html"/></url>
-  <url><loc>https://fuchsino.de/en/impressum.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/impressum.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/impressum.html"/></url>
-  <url><loc>https://fuchsino.de/datenschutz.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/datenschutz.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/datenschutz.html"/></url>
-  <url><loc>https://fuchsino.de/en/datenschutz.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/datenschutz.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/datenschutz.html"/></url>
-  <url><loc>https://fuchsino.de/kontakt.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/kontakt.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/contact.html"/></url>
-  <url><loc>https://fuchsino.de/en/contact.html</loc><xhtml:link rel="alternate" hreflang="de-DE" href="https://fuchsino.de/kontakt.html"/><xhtml:link rel="alternate" hreflang="en" href="https://fuchsino.de/en/contact.html"/></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fuchsino.de/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
