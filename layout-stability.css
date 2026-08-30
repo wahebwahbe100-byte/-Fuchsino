@@ -1,0 +1,18 @@
+/* FUCHSINO layout stability across pages and browsers */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+img, svg, video, canvas {
+  max-width: 100%;
+}
+@supports (scrollbar-gutter: stable) {
+  html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
