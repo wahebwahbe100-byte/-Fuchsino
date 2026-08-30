@@ -78,12 +78,15 @@
   visibility: hidden;
   transform: translateY(-8px) scale(.98);
   transform-origin: top right;
+  z-index: 2000;
+  pointer-events: none;
   transition: opacity .18s ease, visibility .18s ease, transform .22s cubic-bezier(.22,1,.36,1);
 }
 .language-switcher.is-open .language-menu {
   opacity: 1;
   visibility: visible;
   transform: none;
+  pointer-events: auto;
 }
 .language-option {
   min-height: 72px;
@@ -132,7 +135,7 @@
 @media (max-width: 620px) {
   .language-trigger { min-width: 68px; padding: 0 9px; font-size: 11px; }
   .language-trigger .chevron { width: 10px; height: 10px; }
-  .language-menu { right: -48px; width: min(238px, calc(100vw - 24px)); border-radius: 20px; }
+  .language-menu { right: 0; width: min(238px, calc(100vw - 24px)); border-radius: 20px; }
   .language-option { min-height: 66px; grid-template-columns: 38px minmax(0,1fr) 22px; padding: 8px 10px; }
   .language-option strong { font-size: 15px; }
   .language-option .flag { width: 26px; height: 26px; flex-basis: 26px; font-size: 20px; }
