@@ -179,7 +179,7 @@
       gap: clamp(18px,2.4vw,36px);
     }
     .brand { display: inline-flex; align-items: center; gap: 11px; flex: 0 0 auto; }
-    .brand-logo { display: block; width: auto; height: 64px; max-width: 240px; object-fit: contain; transition: transform .45s cubic-bezier(.22,1,.36,1); }
+    .brand-logo { display: block; width: auto; height: 78px; max-width: 290px; object-fit: contain; transition: transform .45s cubic-bezier(.22,1,.36,1); }
     .brand:hover .brand-logo { transform: scale(1.035); }
     .brand-copy { display: grid; line-height: 1; }
     .brand-copy strong { font-size: 25px; letter-spacing: -.8px; }
@@ -530,7 +530,7 @@
 
     @media (max-width: 1180px) {
       .nav-shell { gap: 18px; }
-      .brand-logo { height: 56px; }
+      .brand-logo { height: 68px; }
       .brand-copy strong { font-size: 22px; }
       .brand-copy small { font-size: 7px; }
       .main-nav { gap: 14px; }
@@ -539,10 +539,12 @@
     }
 
     @media (max-width: 1020px) {
-      .main-nav .lang-mobile { display:inline-flex; }
-      .nav-shell { grid-template-columns: auto minmax(0,1fr); }
+      /* Keep the desktop language control visible on phones/tablets too. */
+      .main-nav .lang-mobile { display:none; }
+      .nav-shell { grid-template-columns: auto minmax(0,1fr) auto; }
       .main-nav { justify-self: end; }
-      .nav-actions { display: none; }
+      .nav-actions { display: flex; }
+      .nav-actions .btn { display: none; }
       .product-grid { grid-template-columns: repeat(2,1fr); }
       .process-grid { grid-template-columns: repeat(2,1fr); }
       .process-card::after { display: none; }
@@ -580,7 +582,7 @@
 
     @media (max-width: 620px) {
       .brand { gap: 8px; }
-      .brand-logo { height: 52px; max-width: 185px; }
+      .brand-logo { height: 64px; max-width: 230px; }
       .brand-copy { min-width: 0; }
       .brand-copy strong { font-size: 22px; }
       .brand-copy small { display: block; max-width: 125px; margin-top: 4px; font-size: 6.6px; line-height: 1.25; letter-spacing: .055em; white-space: normal; }
@@ -780,7 +782,8 @@
   .hero-slide.is-active .hero-kicker, .hero-slide.is-active .hero-title, .hero-slide.is-active .hero-copy, .hero-slide.is-active .hero-meta, .hero-slide.is-active .hero-actions { opacity: 1; transform: none; }
   .reveal { opacity: 1; transform: none; }
 </style></noscript>
-<script defer="True" src="lang.js"></script><link href="language-switcher.css" rel="stylesheet"/>
+<script defer="True" src="lang.js?v=3"></script><link href="language-switcher.css?v=8" rel="stylesheet"/>
+<script defer src="mobile-navigation.js?v=2"></script>
 </head><body><header class="site-header" id="top">
 <div class="nav-shell container">
 <a aria-label="FUCHSINO Startseite" class="brand" href="index.html#top">
@@ -795,8 +798,8 @@
 <a class="" href="index.html#logistics">Logistik</a>
 <a class="" href="index.html#about">Über uns</a>
 <a class="" href="kontakt.html">Kontakt</a>
-<button aria-label="Switch to English" class="lang-mobile language-toggle" data-lang-switch="en" type="button"><img alt="" aria-hidden="true" class="lang-flag" src="united-kingdom.png"/><span class="lang-code">EN</span></button></nav>
-<div class="nav-actions"><button aria-label="Switch to English" class="lang-btn language-toggle" data-lang-switch="en" type="button"><img alt="" aria-hidden="true" class="lang-flag" src="united-kingdom.png"/><span class="lang-code">EN</span></button>
+<button aria-label="Switch to English" class="lang-mobile language-toggle" data-lang-switch="en" type="button"><img alt="" aria-hidden="true" class="lang-flag" src="flags.png"/><span class="lang-code">DE</span></button></nav>
+<div class="nav-actions"><button aria-label="Switch to English" class="lang-btn language-toggle" data-lang-switch="en" type="button"><img alt="" aria-hidden="true" class="lang-flag" src="flags.png"/><span class="lang-code">DE</span></button>
 <a class="btn btn-primary btn-small" href="kontakt.html?produkt=6-inch#contactForm">Angebot anfordern <svg aria-hidden="true" class="arrow-icon" viewbox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
 </div>
 </div>

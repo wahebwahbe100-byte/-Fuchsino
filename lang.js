@@ -82,13 +82,15 @@
       if(el.tagName==='A') el.setAttribute('href','');
       const img=el.querySelector('.lang-flag');
       if(img){
-        img.setAttribute('src', target==='en' ? 'united-kingdom.png' : 'flags.png');
+        // Show the CURRENT language in the button, while clicking still switches to the other language.
+        // This keeps the flag/code visually consistent with the language currently displayed on the page.
+        img.setAttribute('src', lang==='en' ? 'united-kingdom.png' : 'flags.png');
         img.setAttribute('alt','');
         img.setAttribute('aria-hidden','true');
       }
       let code=el.querySelector('.lang-code');
       if(!code){ code=document.createElement('span'); code.className='lang-code'; el.appendChild(code); }
-      code.textContent=target.toUpperCase();
+      code.textContent=lang.toUpperCase();
     });
   }
 
@@ -143,6 +145,13 @@
       e.preventDefault();
       const target=switcher.getAttribute('data-lang-switch') || (window.FUCHSINO_LANG.currentLanguage==='de'?'en':'de');
       applyLanguage(target);
+      const openNav=document.querySelector('.main-nav.open');
+      if(openNav){
+        openNav.classList.remove('open');
+        const menuButton=document.querySelector('.menu-toggle');
+        if(menuButton) menuButton.setAttribute('aria-expanded','false');
+        document.body.classList.remove('menu-open');
+      }
     });
     applyLanguage(getRequestedLanguage());
   }
